@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Талина Венгржновская — Научный руководитель платформы АРТАИС</title>
-<meta name="description" content="Кандидат технических наук, основатель ИИ-платформы АРТАИС, коуч первых лиц, спикер ВШЭ, РАНХиГС, Синергия">
+<title>Талина Венгржновская — Научный руководитель платформы АРТАИС™</title>
+<meta name="description" content="Кандидат технических наук, основатель ИИ-платформы АРТАИС™, коуч первых лиц, спикер ВШЭ, РАНХиГС, Синергия">
+<meta name="theme-color" content="#0D1B2A">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="Талина Венгржновская — Научный руководитель АРТАИС™">
+<meta property="og:description" content="Кандидат технических наук, коуч руководителей высшего звена, основатель ИИ-платформы развития человеческого потенциала">
+<meta property="og:image" content="https://artais.art/talina/og-image.jpg">
+<meta property="og:url" content="https://artais.art/talina/">
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="ru_RU">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
@@ -124,7 +132,7 @@ ul{list-style:none}
 }
 
 /* ===== HERO ===== */
-.hero{background:var(--navy);min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero{background:var(--navy);min-height:100vh;min-height:100dvh;display:flex;align-items:center;position:relative;overflow:hidden}
 .hero::before{
   content:'';position:absolute;top:-50%;right:-30%;width:80%;height:200%;
   background:radial-gradient(ellipse at center,rgba(196,138,44,.04) 0%,transparent 70%);pointer-events:none
@@ -275,6 +283,9 @@ ul{list-style:none}
 }
 .btn-outline:hover{color:#fff;box-shadow:0 8px 30px rgba(196,138,44,.25);transform:translateY(-2px)}
 .btn-outline:hover::before{transform:scaleX(1);transform-origin:left}
+.btn-teal{border-color:var(--teal);color:var(--teal)}
+.btn-teal::before{background:var(--teal)}
+.btn-teal:hover{box-shadow:0 8px 30px rgba(25,160,165,.25)}
 
 /* ===== CREDENTIALS ===== */
 .credentials{background:var(--bg)}
@@ -411,9 +422,9 @@ ul{list-style:none}
 <!-- ===== STICKY HEADER ===== -->
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
-    <a href="#" class="header-logo">
-      <img src="unicorn-super.png" alt="" class="header-unicorn">
-      <span>ART<span class="ai">AI</span>S™</span>
+    <a href="javascript:window.scrollTo({top:0,behavior:'smooth'})" class="header-logo">
+      <img src="unicorn-super.png" alt="АРТАИС" class="header-unicorn">
+      <span>ART<span class="ai">AI</span>S<sup style="font-size:.55em;vertical-align:super">тм</sup></span>
     </a>
     <nav class="nav-links">
       <a href="#expertise">Экспертиза</a>
@@ -451,7 +462,7 @@ ul{list-style:none}
     </div>
     <h1>Талина Венгржновская</h1>
     <p class="hero-degree">Кандидат технических наук</p>
-    <p class="hero-role text-on-dark">Научный руководитель ИИ-платформы АРТАИС</p>
+    <p class="hero-role text-on-dark">Научный руководитель ИИ-платформы АРТАИС<sup style="font-size:.6em;vertical-align:super">тм</sup></p>
     <p class="hero-roles">Коуч первых лиц · Спикер · Исследователь</p>
     <p class="hero-quote">Научная методология оценки потенциала человека. Цифровые решения на&nbsp;базе ИИ.</p>
     <div class="hero-cta">
@@ -483,25 +494,25 @@ ul{list-style:none}
     <h2 class="reveal">Экспертиза</h2>
     <div class="expertise-grid">
       <div class="expertise-card reveal">
-        <div class="expertise-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 01-1 1H9a1 1 0 01-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7zm-1 18h2v1a1 1 0 01-1 1h0a1 1 0 01-1-1v-1zm-1-1h4v-1H10v1z"/></svg>
-        </div>
-        <h3>Научный руководитель платформы АРТАИС</h3>
-        <p>Российская ИИ-платформа развития человеческого потенциала. Диагностика по 48 параметрам, персональные треки развития, цифровые тренажёры. Научная база: 6 публикаций с&nbsp;DOI, выборка 135 CEO-level руководителей.</p>
+        <div class="number-value" data-target="50" data-suffix="+" style="margin-bottom:.25rem">0</div>
+        <div class="number-label" style="margin-bottom:1rem">параметров диагностики</div>
+        <h3>Основатель и научный руководитель платформы АРТАИС<sup style="font-size:.55em;vertical-align:super">тм</sup></h3>
+        <p><strong>Наука и искусство развития потенциала человека через ИИ-решения.</strong><br>Авторские методики. Апробация в реальном бизнесе. Персональные треки развития. Цифровые тренажёры.</p>
+        <p style="margin-top:.75rem">Соединяем науку о человеческом потенциале и искусственный интеллект в&nbsp;инструменты для лидеров, команд и&nbsp;организаций.</p>
       </div>
       <div class="expertise-card reveal delay-1">
-        <div class="expertise-icon">
-          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
-        </div>
-        <h3>Коуч первых лиц и команд</h3>
-        <p>4 500+ часов коучинга. 70+ собственников компаний. Средний балл 9,98/10 (Executive MBA Синергия, 100+ собственников с 2017). Международная сертификация: супервизор коучей, ассессор PCC.</p>
+        <div class="number-value" data-target="5500" data-suffix="+">0</div>
+        <div class="number-label" style="margin-bottom:1rem">часов коучинга</div>
+        <h3>Коуч руководителей высшего звена и команд</h3>
+        <p>100+ собственников компаний. Средний балл 9,98/10 (данные Executive MBA Синергия с&nbsp;2017). Международная сертификация: супервизор коучей, коуч первых лиц, командный коуч, ассессор.</p>
+        <p style="margin-top:.75rem">Первый аккредитованный в&nbsp;России специалист по&nbsp;тесту VO (Value Orientations, COGNADEV). The Best Manager Bank TOP-10 (2012,&nbsp;2013).</p>
       </div>
       <div class="expertise-card reveal delay-2">
-        <div class="expertise-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg>
-        </div>
+        <div class="number-value" data-target="25" data-suffix="+">0</div>
+        <div class="number-label" style="margin-bottom:1rem">международных конференций и симпозиумов</div>
         <h3>Спикер и преподаватель</h3>
-        <p>НИУ ВШЭ, РАНХиГС, Синергия, Скандинавская Школа Экономики. МегаФон (550+ руководителей), Альфа-Банк, Сбербанк. Постоянный спикер РАНХиГС 3&nbsp;года подряд.</p>
+        <p>НИУ ВШЭ, РАНХиГС, Синергия, Скандинавская Школа Экономики. МегаФон (550+ руководителей), Альфа-Банк, Сбербанк. Постоянный спикер РАНХиГС 3&nbsp;года подряд. Авторские методики развития лидерского потенциала через креативное мышление.</p>
+        <p style="margin-top:.75rem">Программы: Интегральное развитие лидера. Креативный потенциал. Коучинг первых лиц. Арт-коучинг.</p>
       </div>
     </div>
 
@@ -520,39 +531,6 @@ ul{list-style:none}
   </div>
 </section>
 
-<!-- ===== 4. NUMBERS ===== -->
-<section class="numbers section-pad" id="numbers">
-  <div class="container">
-    <h2 class="reveal">Цифры и факты</h2>
-    <div class="numbers-grid">
-      <div class="number-card reveal">
-        <div class="number-value" data-target="30" data-suffix="+">0</div>
-        <div class="number-label">лет управленческого опыта</div>
-        <div class="number-desc">от линейного руководства до научного руководителя платформы</div>
-      </div>
-      <div class="number-card reveal delay-1">
-        <div class="number-value" data-target="4500" data-suffix="+">0</div>
-        <div class="number-label">часов коучинга</div>
-        <div class="number-desc">индивидуальная и командная работа с руководителями</div>
-      </div>
-      <div class="number-card reveal delay-1">
-        <div class="number-value" data-target="70" data-suffix="+">0</div>
-        <div class="number-label">собственников компаний</div>
-        <div class="number-desc">в личном коучинге</div>
-      </div>
-      <div class="number-card reveal delay-2">
-        <div class="number-value" data-target="500" data-suffix="+">0</div>
-        <div class="number-label">CEO и топ-менеджеров</div>
-        <div class="number-desc">в программах развития</div>
-      </div>
-      <div class="number-card reveal delay-3">
-        <div class="number-value" data-target="9.98" data-suffix="/10" data-decimal="true">0</div>
-        <div class="number-label">средний балл</div>
-        <div class="number-desc">Executive MBA Синергия, 100+ собственников</div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ===== 5. PLATFORM ===== -->
 <section class="platform section-pad" id="platform">
@@ -562,9 +540,9 @@ ul{list-style:none}
     <div class="platform-logo">
       <img src="unicorn-super.png" alt="АРТАИС единорог" style="height:80px;width:auto;object-fit:contain">
     </div>
-    <div class="platform-brand"><span>ART<span class="ai">AI</span>S™</span></div>
+    <div class="platform-brand"><span>ART<span class="ai">AI</span>S<sup style="font-size:.55em;vertical-align:super">тм</sup></span></div>
     <p class="platform-tagline">потенциал человека</p>
-    <h2>Российская ИИ-платформа развития человеческого потенциала</h2>
+    <h2><span style="white-space:nowrap"><span style="color:var(--gold)">АРТАИС<sup style="font-size:.55em;vertical-align:super">тм</sup></span> — Российская ИИ-платформа</span><br>развития человеческого потенциала</h2>
     <p class="platform-narrative">30 лет практики → методики → научная валидация → цифровая платформа</p>
     <ul class="platform-features">
       <li>Диагностика управленческого потенциала</li>
@@ -584,36 +562,29 @@ ul{list-style:none}
       <div class="cred-card reveal">
         <div class="cred-badge"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
         <div>
-          <div class="cred-title">Государственная аттестация высшего (7-го) уровня</div>
+          <div class="cred-title">Государственная аттестация коуч руководителей высшего звена (7-го) уровня</div>
           <div class="cred-desc">Единицы коучей в России имеют подтверждённую квалификацию в национальном реестре (НАРК)</div>
         </div>
       </div>
       <div class="cred-card reveal delay-1">
         <div class="cred-badge"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg></div>
         <div>
-          <div class="cred-title">Эксперт по независимой оценке квалификации коучей</div>
+          <div class="cred-title">Эксперт по независимой оценке квалификации бизнес-коучей руководителей высшего звена</div>
           <div class="cred-desc">Аттестат НОК 77.093.064</div>
         </div>
       </div>
       <div class="cred-card reveal">
         <div class="cred-badge"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></div>
         <div>
-          <div class="cred-title">Единственный аккредитованный в&nbsp;России специалист</div>
-          <div class="cred-desc">Тест VO (Value Orientations, COGNADEV, ЮАР)</div>
+          <div class="cred-title">Руководитель Центра HR-технологий МТПП</div>
+          <div class="cred-desc">Член МТПП с&nbsp;2016. С&nbsp;2024 — руководитель Центра HR-технологий Комитета развития бизнес-практик</div>
         </div>
       </div>
       <div class="cred-card reveal delay-1">
         <div class="cred-badge"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg></div>
         <div>
           <div class="cred-title">Разработчик стандартов</div>
-          <div class="cred-desc">Член рабочей группы при Совете по профквалификациям (2023-2026)</div>
-        </div>
-      </div>
-      <div class="cred-card reveal" style="grid-column:1/-1">
-        <div class="cred-badge"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-        <div>
-          <div class="cred-title">Наставник победителей</div>
-          <div class="cred-desc">1-е место + грантовая поддержка на хакатоне Рыбаков Фонда</div>
+          <div class="cred-desc">Член рабочей группы при Совете по профквалификациям (2023-2026). Руководитель направления: Командный коучинг. С&nbsp;2026 — валидатор</div>
         </div>
       </div>
     </div>
@@ -634,6 +605,7 @@ ul{list-style:none}
           <li>Экс-член Совета директоров ICF Russia Chapter</li>
           <li>Международно сертифицированный супервизор коучей, ассессор PCC</li>
           <li>TOP-10 рейтинга The Best Manager Bank (2012, 2013)</li>
+          <li>Наставник команды-победителя хакатона Рыбаков Фонда (1-е место + грантовая поддержка)</li>
         </ul>
         <h4>Членство</h4>
         <p>ICF, ICC, АРК, ФПКиН, Российское психологическое общество, РАТА</p>
@@ -711,7 +683,7 @@ ul{list-style:none}
     </div>
     <p class="pub-upcoming reveal">Статья в РАНХиГС — выход май 2026</p>
     <div class="section-cta reveal">
-      <a href="#quiz" class="btn-outline" style="border-color:var(--teal);color:var(--teal)" onmouseover="this.style.background='var(--teal)';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='var(--teal)'">Обсудить сотрудничество</a>
+      <a href="#quiz" class="btn-outline btn-teal">Обсудить сотрудничество</a>
     </div>
   </div>
 </section>
@@ -735,7 +707,7 @@ ul{list-style:none}
         <div class="quiz-options">
           <button class="quiz-option" onclick="selectOption(0)">Ищу спикера/преподавателя для мероприятия или программы</button>
           <button class="quiz-option" onclick="selectOption(1)">Хочу обсудить коучинг для себя или команды</button>
-          <button class="quiz-option" onclick="selectOption(2)">Интересует платформа АРТАИС (инвестиции, партнёрство, пилот)</button>
+          <button class="quiz-option" onclick="selectOption(2)">Хочу пройти диагностику, тренажёры или прокачать навыки</button>
           <button class="quiz-option" onclick="selectOption(3)">Хочу обсудить исследовательское сотрудничество</button>
         </div>
       </div>
@@ -780,7 +752,7 @@ ul{list-style:none}
     </div>
     <div class="footer-logo" style="display:flex;flex-direction:column;align-items:center;gap:.25rem">
       <img src="unicorn-super.png" alt="АРТАИС" style="height:36px;width:auto;object-fit:contain;opacity:.6">
-      <span style="font-weight:700;font-size:.85rem;color:var(--on-dark);letter-spacing:.03em;opacity:.6">ART<span style="color:var(--brick)">AI</span>S™</span>
+      <span style="font-weight:700;font-size:.85rem;color:var(--on-dark);letter-spacing:.03em;opacity:.6">ART<span style="color:var(--brick)">AI</span>S<sup style="font-size:.55em;vertical-align:super">тм</sup></span>
       <span style="text-transform:uppercase;letter-spacing:.08em;color:var(--secondary);font-size:.6rem">потенциал человека</span>
     </div>
     <p class="footer-copy">&copy; 2026 Талина Венгржновская</p>
@@ -908,13 +880,13 @@ let selectedOption = -1;
 const options = [
   'Ищу спикера/преподавателя',
   'Коучинг для себя или команды',
-  'Платформа АРТАИС',
+  'Диагностика и тренажёры АРТАИС',
   'Исследовательское сотрудничество'
 ];
 const results = [
   'Вышлю спикер-профиль и свяжусь для обсуждения формата в течение 24 часов.',
   'Подберу оптимальный формат работы и свяжусь в течение 24 часов.',
-  'Подготовлю информацию об АРТАИС и свяжусь в течение 24 часов.',
+  'Подберу подходящую программу диагностики и развития, свяжусь в течение 24 часов.',
   'Свяжусь для обсуждения сотрудничества в течение 24 часов.'
 ];
 
@@ -963,18 +935,25 @@ function submitQuiz(e) {
   const form = document.getElementById('quizForm');
   const data = new FormData(form);
 
-  // mailto fallback
   const name = data.get('name');
   const email = data.get('email');
   const message = data.get('message') || '';
   const interest = data.get('interest');
-  const subject = encodeURIComponent('Заявка с сайта: ' + interest);
-  const body = encodeURIComponent('Имя: ' + name + '\nEmail: ' + email + '\nИнтерес: ' + interest + '\nКомментарий: ' + message);
 
-  // Try opening mailto
-  const mailtoLink = document.createElement('a');
-  mailtoLink.href = 'mailto:ceo@artais.art?subject=' + subject + '&body=' + body;
-  mailtoLink.click();
+  // Send to Telegram bot
+  const tgToken = '8153512418:AAHaKe-NX-zelSvg40dnt3K2gLAn8Ax9vpM';
+  const chatId = '206121732';
+  const text = '📩 Новая заявка с сайта\n\n' +
+    '👤 Имя: ' + name + '\n' +
+    '📧 Email: ' + email + '\n' +
+    '🎯 Интерес: ' + interest + '\n' +
+    (message ? '💬 Комментарий: ' + message : '');
+
+  fetch('https://api.telegram.org/bot' + tgToken + '/sendMessage', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({chat_id: chatId, text: text})
+  }).catch(() => {});
 
   // Show result
   document.getElementById('resultText').textContent = results[selectedOption] || results[1];
