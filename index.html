@@ -7,6 +7,17 @@
 <meta name="description" content="Кандидат технических наук, основатель ИИ-платформы АРТАИС™, коуч первых лиц, спикер ВШЭ, РАНХиГС, Синергия">
 <meta name="theme-color" content="#0D1B2A">
 <link rel="icon" type="image/png" href="favicon.png">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();
+for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(107069524,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/107069524" style="position:absolute;left:-9999px" alt=""></div></noscript>
+<!-- /Yandex.Metrika counter -->
 <meta property="og:title" content="Талина Венгржновская — Научный руководитель АРТАИС™">
 <meta property="og:description" content="Кандидат технических наук, коуч руководителей высшего звена, основатель ИИ-платформы развития человеческого потенциала">
 <meta property="og:image" content="https://artais.art/talina/og-image.jpg">
@@ -259,10 +270,10 @@ ul{list-style:none}
   background:radial-gradient(ellipse at center,rgba(25,160,165,.04) 0%,transparent 70%);pointer-events:none
 }
 .platform-content{text-align:center;position:relative;z-index:1}
-.platform-logo{margin:0 auto 1rem;display:flex;justify-content:center}
+.platform-logo{margin:0 auto 0;display:flex;justify-content:center}
 @keyframes logoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
 .platform-logo img{filter:drop-shadow(0 0 40px rgba(196,138,44,.15));animation:logoFloat 4s ease-in-out infinite}
-.platform-brand{margin-bottom:.25rem}
+.platform-brand{margin-bottom:.25rem;margin-top:-.25rem}
 .platform-brand span{font-weight:700;font-size:1.3rem;color:var(--on-dark);letter-spacing:.05em}
 .platform-brand .ai{color:var(--brick)}
 .platform-tagline{text-transform:uppercase;letter-spacing:.08em;color:var(--secondary);font-size:.75rem;margin-bottom:2rem}
@@ -542,7 +553,7 @@ ul{list-style:none}
     </div>
     <div class="platform-brand"><span>ART<span class="ai">AI</span>S<sup style="font-size:.55em;vertical-align:super">тм</sup></span></div>
     <p class="platform-tagline">потенциал человека</p>
-    <h2><span style="white-space:nowrap"><span style="color:var(--gold)">АРТАИС<sup style="font-size:.55em;vertical-align:super">тм</sup></span> — Российская ИИ-платформа</span><br>развития человеческого потенциала</h2>
+    <h2><span style="color:var(--gold)">АРТАИС<sup style="font-size:.55em;vertical-align:super">тм</sup></span> — Российская ИИ-платформа развития человеческого потенциала</h2>
     <p class="platform-narrative">30 лет практики → методики → научная валидация → цифровая платформа</p>
     <ul class="platform-features">
       <li>Диагностика управленческого потенциала</li>
@@ -708,7 +719,8 @@ ul{list-style:none}
           <button class="quiz-option" onclick="selectOption(0)">Ищу спикера/преподавателя для мероприятия или программы</button>
           <button class="quiz-option" onclick="selectOption(1)">Хочу обсудить коучинг для себя или команды</button>
           <button class="quiz-option" onclick="selectOption(2)">Хочу пройти диагностику, тренажёры или прокачать навыки</button>
-          <button class="quiz-option" onclick="selectOption(3)">Хочу обсудить исследовательское сотрудничество</button>
+          <button class="quiz-option" onclick="selectOption(3)">Разработать ИИ-решение для бизнеса</button>
+          <button class="quiz-option" onclick="selectOption(4)">Хочу обсудить исследовательское сотрудничество</button>
         </div>
       </div>
 
@@ -719,6 +731,10 @@ ul{list-style:none}
           <input type="email" class="quiz-input" name="email" placeholder="Email" required>
           <textarea class="quiz-textarea" name="message" placeholder="Комментарий (опционально)"></textarea>
           <input type="hidden" name="interest" id="interestField">
+          <label style="display:flex;align-items:flex-start;gap:.5rem;font-size:.8rem;color:var(--secondary);margin-bottom:1rem;cursor:pointer">
+            <input type="checkbox" required style="margin-top:.15rem;accent-color:var(--gold)">
+            Согласен(на) на&nbsp;<a href="javascript:void(0)" onclick="document.getElementById('privacyModal').classList.add('open');event.preventDefault()" style="color:var(--teal);text-decoration:underline">обработку персональных данных</a>
+          </label>
           <div class="quiz-actions">
             <button type="button" class="quiz-back" onclick="goBack()">← Назад</button>
             <button type="submit" class="btn-gold">Отправить</button>
@@ -739,9 +755,41 @@ ul{list-style:none}
     <div class="direct-contact reveal">
       <p>Или напишите напрямую:</p>
       <a href="mailto:ceo@artais.art">ceo@artais.art</a>
+      <span style="margin:0 .5rem;opacity:.4">·</span>
+      <a href="https://t.me/TalinaVengrzhnovskaya" target="_blank" rel="noopener" class="teal">Telegram →</a>
     </div>
   </div>
 </section>
+
+<!-- ===== PRIVACY MODAL ===== -->
+<div id="privacyModal" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(13,27,42,.85);backdrop-filter:blur(6px);align-items:center;justify-content:center;padding:1rem">
+  <div style="background:#1B2A3D;border:1px solid rgba(212,175,55,.2);border-radius:1rem;max-width:640px;width:100%;max-height:80vh;overflow-y:auto;padding:2rem;position:relative;color:#ccc;font-size:.85rem;line-height:1.6">
+    <button onclick="document.getElementById('privacyModal').classList.remove('open')" style="position:absolute;top:1rem;right:1rem;background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer">&times;</button>
+    <h3 style="color:#D4AF37;margin-bottom:1rem;font-size:1.1rem">Политика обработки персональных данных</h3>
+    <p><strong>Оператор:</strong> ИП Венгржновская Талина Маратовна<br>ИНН: 773300611680, ОГРНИП: 017283654<br>Email: ceo@artais.art</p>
+    <h4 style="color:#5EEAD4;margin:1rem 0 .5rem;font-size:.95rem">1. Общие положения</h4>
+    <p>Настоящая Политика разработана в&nbsp;соответствии с&nbsp;Федеральным законом от&nbsp;27.07.2006 №152-ФЗ «О&nbsp;персональных данных». Политика определяет порядок обработки и&nbsp;защиты персональных данных пользователей сайта artais.art.</p>
+    <h4 style="color:#5EEAD4;margin:1rem 0 .5rem;font-size:.95rem">2. Какие данные собираются</h4>
+    <p>Через форму обратной связи: имя, адрес электронной почты, текст сообщения. Автоматически: данные о&nbsp;посещении (cookies, IP-адрес, параметры браузера) через сервис Яндекс.Метрика.</p>
+    <h4 style="color:#5EEAD4;margin:1rem 0 .5rem;font-size:.95rem">3. Цели обработки</h4>
+    <p>Обработка обращений пользователей, ответ на&nbsp;запросы, улучшение качества сайта, статистика посещений.</p>
+    <h4 style="color:#5EEAD4;margin:1rem 0 .5rem;font-size:.95rem">4. Правовое основание</h4>
+    <p>Согласие субъекта персональных данных (п.1 ч.1 ст.6 152-ФЗ), выраженное путём заполнения формы и&nbsp;отметки чекбокса.</p>
+    <h4 style="color:#5EEAD4;margin:1rem 0 .5rem;font-size:.95rem">5. Хранение и защита</h4>
+    <p>Данные хранятся на&nbsp;территории Российской Федерации (хостинг Beget, Москва). Доступ к&nbsp;данным имеет только оператор. Применяются организационные и&nbsp;технические меры защиты.</p>
+    <h4 style="color:#5EEAD4;margin:1rem 0 .5rem;font-size:.95rem">6. Передача третьим лицам</h4>
+    <p>Данные не&nbsp;передаются третьим лицам, за&nbsp;исключением случаев, предусмотренных законодательством РФ. Сервис Яндекс.Метрика обрабатывает обезличенные данные в&nbsp;соответствии с&nbsp;собственной политикой конфиденциальности.</p>
+    <h4 style="color:#5EEAD4;margin:1rem 0 .5rem;font-size:.95rem">7. Права субъекта</h4>
+    <p>Вы вправе запросить информацию об&nbsp;обработке ваших данных, потребовать их&nbsp;уточнения, блокирования или уничтожения, направив запрос на&nbsp;ceo@artais.art.</p>
+    <h4 style="color:#5EEAD4;margin:1rem 0 .5rem;font-size:.95rem">8. Срок действия согласия</h4>
+    <p>Согласие действует до&nbsp;момента его отзыва. Отзыв направляется на&nbsp;ceo@artais.art. Обработка прекращается в&nbsp;течение 30&nbsp;дней с&nbsp;момента получения отзыва.</p>
+    <p style="margin-top:1.5rem;color:var(--secondary);font-size:.75rem">Дата публикации: 09.03.2026</p>
+  </div>
+</div>
+<style>
+#privacyModal{display:none!important}
+#privacyModal.open{display:flex!important}
+</style>
 
 <!-- ===== 9. FOOTER ===== -->
 <footer class="footer">
@@ -887,6 +935,7 @@ const results = [
   'Вышлю спикер-профиль и свяжусь для обсуждения формата в течение 24 часов.',
   'Подберу оптимальный формат работы и свяжусь в течение 24 часов.',
   'Подберу подходящую программу диагностики и развития, свяжусь в течение 24 часов.',
+  'Обсудим задачу и предложу варианты ИИ-решения для вашего бизнеса в течение 24 часов.',
   'Свяжусь для обсуждения сотрудничества в течение 24 часов.'
 ];
 
